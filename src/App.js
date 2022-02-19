@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import data from './data.json'
 import './App.css';
+import Header from './components/Header/Header';
+import ToDoList from './components/ToDoList/ToDoList';
+import ToDoForm from './components/ToDoForm/ToDoForm';
+import { useState } from 'react';
 
 function App() {
+  
+    const [todolists, setTodolists] = useState(data)
+  const addtask=(todovalue)=>{
+    let copy = [...todolists]
+    copy = [...todolists , {id: todolists.length +1,
+    task: todovalue,
+    complete: false}]
+    setTodolists(copy)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header/>
+        <ToDoForm addtask={addtask}/>
+        <ToDoList todolists={todolists}/>
     </div>
   );
 }

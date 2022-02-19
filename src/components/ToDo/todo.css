@@ -1,0 +1,7 @@
+.todo{
+    display: flex;
+    justify-content: start;
+}
+.strike{
+    text-decoration: line-through;
+}
