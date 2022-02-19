@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
-import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import React from 'react'
+import DeleteIcon from '@mui/icons-material/Delete';
 import './todo.css'
-const ToDo = ({todo}) => {
-    const [isComplete, setIsComplete] = useState(todo.complete)
-    const toggledone =()=> setIsComplete(!isComplete)
+const ToDo = ({todo ,deletetask}) => {
+    const confirmDel = ()=>{
+    const userRes = window.confirm("wanna to delete?");
+    if(userRes)deletetask(todo.id)
+    }
   return (
-    <div className={isComplete? 'todo strike': 'todo'} >
-        <RadioButtonUncheckedIcon onClick= {toggledone}/>
-        {todo.task}
+    <div className="todo">
+      <p>{todo.task}</p>
+      <DeleteIcon className='icon' onClick={confirmDel}/>
     </div>
   )
 }

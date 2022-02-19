@@ -1,0 +1,44 @@
+.addtask{
+    background-color: rgb(148, 0, 62) !important;
+    font-size: 24px;
+    margin: 4px;
+    transition: all 0.2s;
+    
+}
+.addtask:hover{
+    background-color: rgba(148, 0, 62, 0.7)!important;
+    cursor: pointer;
+    transform: scale(0.97);
+}
+.alltasks{
+    background-color: blue;
+    font-size: 24px;
+    margin: 4px;
+}
+.alltasks:hover{
+    background-color: rgba(0, 0, 255, 0.7);
+    cursor: pointer;
+    transform: scale(0.97);
+}
+.grpIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon_1,.icon_2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.icon{
+    font-size: 30px !important;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
