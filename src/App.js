@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -44,7 +44,6 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/add' element={<ToDoForm addtask={addtask} />} />
           <Route path='/view' element={<ToDoList todolists={todolists} removetask = {removetask} />} />
-
         </Routes>
       </Router>
     </div>

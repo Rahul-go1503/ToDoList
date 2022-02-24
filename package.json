@@ -1,7 +1,7 @@
 {
   "name": "todos-list",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://rahul-go1503.github.io/ToDoList/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
