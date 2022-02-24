@@ -11,11 +11,12 @@ const ToDoForm = ({addtask}) => {
     const inputhandler = (e)=>{
         setTodovalue(e.target.value)
     }
-    const Addtodo =()=>{
+    const Addtodo =(e)=>{
         if(todovalue){
           addtask(todovalue)
           setTodovalue('')
           alert("added")
+          window.location.href = '/view'
         }else alert("Empty task is not added")
     }
   return (

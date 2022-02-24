@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import AddIcon from '@mui/icons-material/Add';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { Link } from 'react-router-dom';
-const userName = window.prompt("Hey! Whats Your Name ?")
+// const userName = window.prompt("Hey! Whats Your Name ?")
 const Home = () => {
   return (
       <div className="Container">
@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <p>{userName}</p>
+        {/* <p>{userName}</p> */}
       </div>
   )
 }

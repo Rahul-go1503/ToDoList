@@ -8,8 +8,6 @@ import { Link } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 import HomeIcon from '@mui/icons-material/Home';
 const ToDoList = ({ todolists,removetask }) => {
-  console.log(todolists);
-  console.log(removetask);
   const deletetask=(id)=>{
     removetask(id)
   }

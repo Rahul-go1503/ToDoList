@@ -1,12 +1,12 @@
 .addtask{
-    background-color: rgb(148, 0, 62) !important;
+    background-color: crimson !important;
     font-size: 24px;
     margin: 4px;
     transition: all 0.2s;
     
 }
 .addtask:hover{
-    background-color: rgba(148, 0, 62, 0.7)!important;
+    background-color: rgba(220, 20, 60, 0.7)!important;
     cursor: pointer;
     transform: scale(0.97);
 }
