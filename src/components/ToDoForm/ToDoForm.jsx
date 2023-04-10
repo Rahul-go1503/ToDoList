@@ -16,7 +16,7 @@ const ToDoForm = ({addtask}) => {
           addtask(todovalue)
           setTodovalue('')
           alert("added")
-          window.location.href = '/view'
+          // window.location.href = '/view'
         }else alert("Empty task is not added")
     }
   return (
